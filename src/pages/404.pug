@@ -1,0 +1,11 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Такая страница не существует — Smart-Frontend';
+
+block content
+  .wrapper
+    include ./../components/sections/header/header.pug
+    main
+      include ./../components/sections/404/404.pug
+    include ./../components/sections/footer/footer.pug

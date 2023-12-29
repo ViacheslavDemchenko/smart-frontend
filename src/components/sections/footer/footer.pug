@@ -1,0 +1,21 @@
+footer.footer 
+  .container 
+    .footer__inner 
+      .footer__inner-left 
+        include ../../bem-blocks/logo/logo.pug
+        //- include ../../bem-blocks/nav/nav.pug
+      .footer__inner-right 
+        span Блог Smart Frontend рассчитан как на тех, кто уже активно занимается созданием сайтов и 
+          | приложений, так и новичков, которые только начинают свой путь. Здесь вы найдете статьи по css и js трюкам, 
+          | узнаете последние новости о трендах и новшествах в сфере веб-разработки.
+      include ../../bem-blocks/nav/nav.pug
+      .footer__inner-bottom
+        .warning Перепечатывание материалов с сайта 
+          span smart-frontend.ru 
+          | допускается с указанием  активной ссылки (гиперссылки) на первоисточник
+        .copyright Copyright © 
+          span 2020-2023 
+          | All rights reserved
+        .sitemap 
+          a(href="sitemap.html") Карта сайта
+        include ../../bem-blocks/socials/socials.pug

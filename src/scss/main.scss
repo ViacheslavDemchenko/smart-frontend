@@ -1,0 +1,60 @@
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+// @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/_footer";
+
+// Сайдбар
+@import "./../components/sections/aside/_aside";
+@import "./../components/sections/aside/_aside-inner";
+
+// БЭМ-блоки
+// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
+@import "./../components/bem-blocks/burger/burger"; // Бургер
+@import "./../components/bem-blocks/logo/_logo"; // Логотип
+@import "./../components/bem-blocks/logo-text/_logo-text"; // Текст в логотипе
+@import "./../components/bem-blocks/nav/_nav"; // Меню
+@import "./../components/bem-blocks/socials/_socials"; // Блок соцсетей и почты в header
+@import "./../components/bem-blocks/email/_email"; // Почта
+@import "./../components/bem-blocks/breadcrumbs/_breadcrumbs"; // Хлебные крошки
+@import "./../components/bem-blocks/article/_article"; // Статья превью на главной странице блога
+@import "./../components/bem-blocks/pagination/_pagination"; // Пагинация в блоге
+// @import "./../components/bem-blocks/stars/_stars"; // Звездный рейтинг поста
+// @import "./../components/bem-blocks/modal/modal"; // Модалки
+
+// Секции
+@import "./../components/sections/blog/_blog"; // Секция блога
+@import "./../components/sections/single/_single"; // Секция поста single
+@import "./../components/sections/single-top/_single-top"; // Верхняя часть страницы поста с фоновой картинкой
+@import "./../components/sections/single-content/_single-content"; // Контентная часть страницы поста
+@import "./../components/sections/single-bottom/_single-bottom"; // Нижняя часть страницы поста
+@import "./../components/sections/form/_form"; // Форма
+@import "./../components/sections/404/_404"; // Страница 404
+@import "./../components/sections/sitemap/_sitemap"; // Страница карты сайта

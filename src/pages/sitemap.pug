@@ -1,0 +1,13 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'Карта сайта — Smart-Frontend';
+
+block content
+  .wrapper
+    include ./../components/sections/header/header.pug
+    .wrapper__inner
+      main.main-index
+        include ./../components/sections/sitemap/sitemap.pug
+      aside.aside-right
+    include ./../components/sections/footer/footer.pug

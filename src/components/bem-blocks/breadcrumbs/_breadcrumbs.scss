@@ -1,0 +1,62 @@
+.breadcrumbs {
+  position: relative;
+  width: 100%;
+  max-width: 144rem;
+  margin: 1rem 0 5rem 1.2rem;
+  color: #000;
+
+  &__item {
+    color: #000;
+
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 1.4rem;
+      color: #000;
+
+      @media (min-width: 1024px) {
+        font-size: 1.6rem;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .breadcrumbs-slash {
+      display: inline-block;
+      margin: 0 0.5rem;
+      color: #000;
+    }
+  }
+
+  span {
+    font-size: 1.4rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 1.8rem;
+    }
+
+    &--homepage {
+      color: #000;
+    }
+  }
+}
