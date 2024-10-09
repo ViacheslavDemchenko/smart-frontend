@@ -24,6 +24,7 @@
 
 // Плагины
 // @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+@import "./../scss/libs/swiper-bundle";
 
 // Хедер
 @import "./../components/sections/header/_header";
@@ -32,29 +33,17 @@
 @import "./../components/sections/footer/_footer";
 
 // Сайдбар
-@import "./../components/sections/aside/_aside";
-@import "./../components/sections/aside/_aside-inner";
+// @import "./../components/sections/aside/_aside";
 
 // БЭМ-блоки
-// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
-@import "./../components/bem-blocks/burger/burger"; // Бургер
-@import "./../components/bem-blocks/logo/_logo"; // Логотип
-@import "./../components/bem-blocks/logo-text/_logo-text"; // Текст в логотипе
-@import "./../components/bem-blocks/nav/_nav"; // Меню
-@import "./../components/bem-blocks/socials/_socials"; // Блок соцсетей и почты в header
-@import "./../components/bem-blocks/email/_email"; // Почта
-@import "./../components/bem-blocks/breadcrumbs/_breadcrumbs"; // Хлебные крошки
-@import "./../components/bem-blocks/article/_article"; // Статья превью на главной странице блога
-@import "./../components/bem-blocks/pagination/_pagination"; // Пагинация в блоге
-// @import "./../components/bem-blocks/stars/_stars"; // Звездный рейтинг поста
-// @import "./../components/bem-blocks/modal/modal"; // Модалки
+@import "./../components/blocks/logo/_logo"; // Логотип
+@import "./../components/blocks/nav/_nav"; // Меню
+@import "./../components/blocks/contacts/_contacts"; // Контакты
+@import "./../components/blocks/socials/_socials"; // Соцсети
+@import "./../components/blocks/burger/_burger"; // Бургер
 
 // Секции
-@import "./../components/sections/blog/_blog"; // Секция блога
-@import "./../components/sections/single/_single"; // Секция поста single
-@import "./../components/sections/single-top/_single-top"; // Верхняя часть страницы поста с фоновой картинкой
-@import "./../components/sections/single-content/_single-content"; // Контентная часть страницы поста
-@import "./../components/sections/single-bottom/_single-bottom"; // Нижняя часть страницы поста
-@import "./../components/sections/form/_form"; // Форма
-@import "./../components/sections/404/_404"; // Страница 404
-@import "./../components/sections/sitemap/_sitemap"; // Страница карты сайта
+@import "./../components/sections/first/_first"; // Первая секция
+@import "./../components/sections/second/_second"; // Вторая секция
+@import "./../components/sections/third/_third"; // Третья секция
+@import "./../components/sections/fourth/_fourth"; // Четвертая секция

@@ -35,10 +35,10 @@ const buildFolder = './docs';
 * Название текущего проекта 
 * (необходимо прописать его также в ссылках на js, css и fonts файлы в файлах footer и head в папке layouts)
 */
-const projectName = 'smart-frontend';
+const projectName = 'theme';
 
-const themePath = `${buildFolder}/wp-content/themes/${projectName}/assets/`; // For wordpress
-// const themePath = `${buildFolder}/assets/`; // For other cases
+// const themePath = `${buildFolder}/wp-content/themes/${projectName}/assets/`; // For wordpress
+const themePath = `${buildFolder}/assets/`; // For other cases
 const htmlMin = false; // HTML minification (false by default)
 
 const paths = {
@@ -98,7 +98,7 @@ const paths = {
 };
 
 // Project build type (development or production)
-let isDev = true; // Оставить true для development или заменить на false для production версии сборки проекта
+let isDev = false; // Оставить true для development или заменить на false для production версии сборки проекта
 let isProd = !isDev;
 
 /* 

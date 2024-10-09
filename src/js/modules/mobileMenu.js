@@ -1,30 +1,29 @@
-export default function mobileMenu() {
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.nav-wrap');
+const menuItems = document.querySelectorAll('.nav-wrap .nav li a');
+const html = document.documentElement; // Селектор для тега <html>
 
-  const burgerButton = document.querySelector('.cmn-toggle-switch__htx');
-  const mobileMenu = document.querySelector('.header__mobile-wrap');
-  const html = document.documentElement;
-  const menuLinks = document.querySelectorAll('.header nav ul li a');
+// Открытие и закрытие меню по клику на бургер
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('nav-wrap--open');
+  html.classList.toggle('no-scroll'); // Добавление/удаление класса no-scroll
+});
 
+// Закрытие меню при клике на любой пункт меню
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    burger.classList.remove('burger--active');
+    menu.classList.remove('nav-wrap--open');
+    html.classList.remove('no-scroll'); // Удаление класса no-scroll
+  });
+});
 
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('header__mobile-wrap--active');
-      burgerButton.classList.remove('active');
-      html.classList.remove('no-scroll');
-    });
-  });
-  
-  burgerButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('header__mobile-wrap--active');
-    burgerButton.classList.toggle('active');
-    html.classList.toggle('no-scroll');
-  });
-  
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1200) {
-      mobileMenu.classList.remove('header__mobile-wrap--active');
-      burgerButton.classList.remove('active');
-      html.classList.remove('no-scroll');
-    }
-  });
-}
+// Закрытие меню при расширении экрана до 1440px и более
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1440) {
+    burger.classList.remove('burger--active');
+    menu.classList.remove('nav-wrap--open');
+    html.classList.remove('no-scroll'); // Удаление класса no-scroll
+  }
+});

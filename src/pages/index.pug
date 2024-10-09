@@ -1,13 +1,12 @@
 extends ./../layouts/main
 
 block variables
-  - let pageTitle = 'Блог веб-разработчика — Smart-Frontend';
+  - let pageTitle = 'Stepanchenko';
 
 block content
-  .wrapper
-    include ./../components/sections/header/header.pug
-    .wrapper__inner
-      main.main-index
-        include ./../components/sections/blog/blog.pug
-      aside.aside-right
-    include ./../components/sections/footer/footer.pug
+  include ./../components/sections/header/header.pug
+  include ./../components/sections/first/first.pug
+  include ./../components/sections/second/second.pug
+  include ./../components/sections/third/third.pug
+  include ./../components/sections/fourth/fourth.pug
+  include ./../components/sections/footer/footer.pug
