@@ -1,85 +1,64 @@
 .first {
-  position: relative;
-  width: 100%;
-  padding: 4rem 0 6.7rem 0;
-  background-color: var(--purple_4);
-
-  @media (min-width: 768px) {
-    padding: 9rem 0 8.5rem 0;
-  }
-
-  @media (min-width: 1440px) {
-    padding: 13.1rem 0;
-  }
+  padding: 5.9rem 0 6.8rem 0;
 
   &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .btn {
-      padding: 1.1rem 5.347rem;
-      background: #DEDEDE;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 3.7rem;
+    .first-text {
+      max-width: 59.4rem;
+      padding-top: 5.6rem;
 
-      &:hover {
-        color: var(--purple_3);
+      span {
+        color: var(--green_1);
+      }
+
+      p {
+        max-width: 43.7rem;
+        margin-bottom: 7.8rem;
+        @include Inter-Regular();
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        color: var(--blue_2);
       }
     }
 
-    .slider_main {
+    .first-img {
+      width: 81.5rem;
+      position: relative;
+      right: -14.2rem;
+      opacity: 0.8;
+      border-radius: 7rem;
 
-      .swiper-slide {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+      .first-img__star-3 {
+        position: absolute;
+        bottom: -2rem;
+        right: 1rem;
+        width: 12rem;
+        height: 14.6rem;
+      }
 
-        @media (min-width: 768px) {
-          flex-direction: row;
-          justify-content: space-between;
-        }
+      .first-img__star-2 {
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+        width: 7.2rem;
+        height: 9.4rem; 
+      }
 
-        @media (min-width: 1440px) {
-          font-size: 6.4rem;
-          line-height: 6.8rem;
-          justify-content: space-between;
-        }
+      .first-img__star-1 {
+        position: absolute;
+        bottom: 0;
+        left: -20rem;
+        width: 37.2rem;
+        height: 40.7rem; 
+      }
 
-        &__img {
-          margin-bottom: 3rem;
-        }
-
-        .slide__text {
-          order: 1;
-          // max-width: 34.4rem;
-          max-width: 49.3rem;
-          margin-top: 2rem;
-          text-align: center;
-
-          @media (min-width: 768px) {
-            order: 0;
-            margin-bottom: 0;
-            text-align: left;
-          }
-
-          @media (min-width: 1440px) {
-            max-width: 49.3rem;
-          }
-
-          p {
-            margin-bottom: 3rem;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
-            color: var(--white_3);
-
-            @media (min-width: 768px) {
-              margin-bottom: 4rem;
-              font-size: 1.8rem;
-              line-height: 2.1rem;
-            }
-          }
-        }
+      picture {
+        width: 81.5rem;
+        display: block;
       }
     }
   }
 }
-

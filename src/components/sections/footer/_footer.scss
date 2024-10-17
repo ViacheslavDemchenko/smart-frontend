@@ -1,120 +1,80 @@
 .footer {
-  background-color: var(--purple_4);
+  padding: 16.8rem 0 15rem 0;
+  background: var(--blue_3);
 
   &__inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1.7rem 0 1.9rem 0;
+    width: 100%;
 
-    @media (min-width: 768px) {
-      padding: 4.6rem 0 5.4rem 0;
-      flex-direction: row;
+    &-top {
+      display: flex;
       justify-content: space-between;
-    }
+      align-items: center;
+      margin-bottom: 8.6rem;
 
-    @media (min-width: 1440px) {
-      padding: 6rem 0;
-    }
-
-    .logo {
-
-      margin-bottom: 2.2rem;
-
-      @media (min-width: 1440px) {
-        margin-bottom: 0;
+      h3 {
+        margin-bottom: 2.5rem;
+        font-family: 'Montserrat'; /// !!!
+        font-style: normal;
+        font-weight: 200;
+        font-size: 5rem;
+        line-height: 6.1rem;
+        color: var(--white_1);
       }
 
-      a {
-        color: var(--white_3);
+      .footer__image {
+
       }
-    }
 
-    .nav-wrap {
-      width: auto;
-      margin: 0 auto 0 0;
-    }
+      .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-    nav {
+        a {
+          display: block;
+          margin-bottom: 2.5rem;
+          font-family: 'Montserrat'; /// !!!
+          font-style: normal;
+          font-weight: 200;
+          font-size: 3.8rem;
+          line-height: 4.6rem;
+          color: var(--white_1);
+        }
 
-      ul {
-    
-        li {
-    
+        .whatsapp {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 4.8rem;
+
           a {
-    
-            &.active {
-              color: var(--white_3);
-            }
+            margin-bottom: 0;
+            text-decoration-line: underline;
+            color: var(--green_1);
+          }
 
-            &:hover {
-              color: var(--white_3);
-              transition: color linear 0.5s;
-            }
+          &::before {
+            position: absolute;
+            content: "";
+            left: -5rem;
+            width: 4.6rem;
+            height: 4.9rem;
+            background: url("../img/icons/whatsapp.svg") no-repeat center center;
           }
         }
-      }
-    }
 
-    .burger--footer {
-      top: 2.6rem;
-      left: -45%;
-
-      @media (min-width: 768px) {
-        top: -1.1rem;
-        left: unset;
-      }
-  
-      .burger__line--footer {
-        background-color: var(--white_3);
-      }
-  
-    }
-
-    .contacts--footer {
-      display: flex;
-      margin: 0;
-    
-      .email {
-        a {
-          color: var(--gray_2);
-        }
-      }
-
-      .phone {
-        
-        a {
-          color: var(--white_3);
+        .footer-btn {
+          padding: 1.95rem 6.16rem;
         }
       }
     }
-  }
 
-  &-bottom {
-    background-color: var(--purple_2);
-
-    &__inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0 2rem 0;
-
-      @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 3rem 0;
-      }
-  
-      .copyright {
-        order: 1;
-        font-size: 1.6rem;
-        line-height: 2.1rem;
-        color: var(--gray_2);
-
-        @media (min-width: 768px) {
-          order: 0;
-        }
-      }
+    &-bottom {
+      @include Montserrat-Medium();
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      color: var(--white_1);
+      opacity: 0.33;
     }
   }
 }

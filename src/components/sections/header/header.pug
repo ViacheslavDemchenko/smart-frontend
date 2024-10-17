@@ -1,11 +1,10 @@
 header.header
   .container
-    .header__inner
-      include ./../../blocks/burger/burger.pug
+    .header__inner 
       include ./../../blocks/logo/logo.pug
       include ./../../blocks/nav/nav.pug
-      .contacts.contacts--header
-        .phone
-          a(href="tel:88000000000") 8 800 000 00 00
-        .email
-          a(href="mailto:info@stepanchenko.me") info@stepanchenko.me
+      .whatsapp
+        a(href="#!" target="_blank" rel="external")
+          picture
+            img(src="assets/img/icons/whatsapp.svg" width="40" height="42" alt="" title="" loading="lazy")
+      include ./../../blocks/contacts/contacts.pug

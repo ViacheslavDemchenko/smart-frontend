@@ -98,7 +98,7 @@ const paths = {
 };
 
 // Project build type (development or production)
-let isDev = false; // Оставить true для development или заменить на false для production версии сборки проекта
+let isDev = true; // Оставить true для development или заменить на false для production версии сборки проекта
 let isProd = !isDev;
 
 /* 
